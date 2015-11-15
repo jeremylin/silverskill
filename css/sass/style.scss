@@ -35,6 +35,8 @@ section {
 }
 
 .intro {
+	background-color: #FFFFFF;
+
 	.centerWrap {
 		overflow: hidden;
 
@@ -117,6 +119,10 @@ section {
 
 				p {
 					color: #848484;
+
+					.more {
+						font-family: 'Contrail One', cursive;
+					}
 				}
 			}
 
