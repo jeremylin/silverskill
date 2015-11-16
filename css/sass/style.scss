@@ -10,6 +10,24 @@ html ,body {
 
 section {
 	width: 100%;
+
+	.contactBtn {
+		display: inline-block;
+		width: 240px;
+		padding: 25px 0;
+		background-color: #FFD983;
+		margin-top: 50px;
+		@include radius(12px);
+		@include shadow(0, 10px, 0, 0, #E0BA51);
+		font-size: 24px;
+		color: #751F16;
+
+		&:hover {
+			@include shadow(0, 10px, 0, 0, #CCA859);
+			position: relative;
+			top: 2px;
+		}
+	}
 }
 
 .container {
@@ -34,26 +52,59 @@ section {
 	}
 }
 
-.intro {
-	background-color: #FFFFFF;
+.intro, .part {
+	background-color: #FFFFFF;	
 
 	.centerWrap {
 		overflow: hidden;
 
-		.logo, .statement {
+		.forWriting, .statement {
 			float: left;
 		}
 
-		.logo {
-			width: 25%;
-			padding: 10% 0 8% 10%;
+		.forWriting {
 			text-align: center;
 		}
+	}	
+}
 
-		.statement {
-			width: 50%;
-			padding: 10% 10% 10% 5%;
-		}
+.intro {
+	.forWriting {
+		width: 25%;
+	}
+
+	.statement {
+		width: 50%;
+	}
+
+	.left {
+		padding: 10% 0 8% 10%;
+	}
+
+	.right {
+		padding: 10% 10% 10% 5%;
+	}
+}
+
+.part {
+	padding: 5% 0;
+
+	.forWriting {
+		width: 45%;
+		height: 358px;
+	}
+
+	.statement {
+		width: 45%;
+		height: 358px;
+	}
+
+	.left {
+		padding: 5% 2% 3% 3%;
+	}
+
+	.right {
+		padding: 5% 3% 3% 2%;
 	}
 }
 
@@ -68,24 +119,6 @@ section {
 
 		p {
 			color: #fff;
-		}
-
-		a {
-			display: inline-block;
-			width: 240px;
-			padding: 25px 0;
-			background-color: #FFD983;
-			margin-top: 50px;
-			@include radius(12px);
-			@include shadow(0, 10px, 0, 0, #E0BA51);
-			font-size: 24px;
-			color: #751F16;
-
-			&:hover {
-				@include shadow(0, 10px, 0, 0, #CCA859);
-				position: relative;
-				top: 2px;
-			}
 		}
 	}
 }
@@ -131,6 +164,16 @@ section {
 				color: #751F16;
 			}
 		}
+	}
+}
+
+.participate {
+	margin: 6% 0;
+
+	.contactBtn {
+		display: block;
+		margin: 70px auto 0;
+		text-align: center;
 	}
 }
 
