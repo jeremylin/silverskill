@@ -23,7 +23,8 @@ section {
 		color: #751F16;
 
 		&:hover {
-			@include shadow(0, 10px, 0, 0, #CCA859);
+			background-color: #FFD577;
+			@include shadow(0, 8px, 0, 0, #CCA859);
 			position: relative;
 			top: 2px;
 		}
@@ -35,7 +36,8 @@ section {
 	margin: 0 auto;
 
 	.centerWrap {
-		width: 100%;
+		width: 96%;
+		margin: 0 auto;
 	}
 
 	h1 {
@@ -89,14 +91,27 @@ section {
 .part {
 	padding: 5% 0;
 
-	.forWriting {
-		width: 45%;
-		height: 358px;
+	.wraps {
+		overflow: hidden;
+		width: 100%;
+
+		h1 {
+			line-height: 1.4em;
+		}
 	}
 
-	.statement {
+	hr {
+		width: 50%;
+		border: 1px solid #e0ded5;
+		margin-top: 30px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.forWriting, .statement {
 		width: 45%;
-		height: 358px;
 	}
 
 	.left {
@@ -119,6 +134,7 @@ section {
 
 		p {
 			color: #fff;
+			line-height: 1.5em;
 		}
 	}
 }
@@ -199,30 +215,146 @@ section {
 	}
 }
 
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1399px) {
+    /// 如果使用者之視窗寬度介於 1280px ~ 1399px，將會再載入這裡的 CSS。
+    .container {
+    	width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
     /// 如果使用者之視窗寬度介於 960px ~ 1280px，將會再載入這裡的 CSS。
     .container {
-    	min-width: 960px;
+    	width: 960px;
     }
+
+	.intro {
+		.forWriting {
+			width: 28%;
+		}
+
+		.left {
+			padding: 13% 0 8% 7%;
+		}
+
+		.right {
+			padding: 10% 7% 10% 8%;
+		}
+	}
+
+	.records {
+		.centerWrap {
+
+			.blogs {
+				width: 48%;
+			}
+		}
+	}
+
+	.part {
+		.left {
+			padding: 5% 2% 0 0;
+		}
+
+		.right {
+			padding: 5% 0 0 2%;
+		}
+
+		.forWriting {
+			padding-top: 14%;
+		}
+
+		.statement {
+			width: 51%;
+		}
+	}	
 }
 
 @media screen and (max-width: 959px) {
     // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。
     .container {
-    	min-width: 768px;
-    }    
+    	width: 768px;
+    } 
+
+	.intro {
+		.forWriting, .statement {
+			width: 80%;
+		}
+
+		.left {
+			padding: 13% 10% 2%;
+		}
+
+		.right {
+			padding: 5% 10% 12% 10%;
+		}
+	} 
+
+	.participate {
+		.contactBtn {
+			margin: 70px auto;
+		}
+	} 
+
+	.part {
+		.left, .right {
+			padding: 5% 1% 0 1%;
+		}
+
+		.forWriting {
+			padding-top: 5%;
+		}
+
+		.forWriting, .statement {
+			width: 98%;
+		}
+	} 
 }
 
 @media screen and (max-width: 767px) {
     // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。
     .container {
-    	min-width: 480px;
-    }     
+    	width: 480px;
+    }
+
+	.records {
+		.centerWrap {
+
+			.blogs {
+				width: 98%;
+			}
+		}
+	} 
+
+	section {
+		.contactBtn {
+			margin-bottom: 30px;
+		}
+	}
+
+	.footer {
+		.allRights {
+			font-size: 12px;
+		}
+	}  
 }
 
 @media screen and (max-device-width: 480px) {
     // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。
     .container {
-    	min-width: 320px;
+    	width: 320px;
     }
+
+    .intro .left {
+    	img {
+    		width: 55%;
+    	}
+    }
+
+	.part {
+		.wraps h1 {
+			font-size: 1.6em;
+		}
+	}
 }
