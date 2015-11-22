@@ -1,0 +1,3 @@
+User-agent: *
+
+SITEMAP: http://silverskill.org/sitemap.txt
