@@ -8,9 +8,11 @@ html ,body {
 	background-color: #F4F4F0;
 }
 
-section {
+header, section {
 	width: 100%;
+}
 
+section {
 	.contactBtn {
 		display: inline-block;
 		width: 240px;
@@ -28,6 +30,23 @@ section {
 			position: relative;
 			top: 2px;
 		}
+	}
+}
+
+header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+
+	.smallLogo {
+		font-size: 0;
+		position: absolute;
+		top: 60px;
+		left: 150px;
+		width: 200px;
+		height: 37px;
+		background: url(../images/logo_header.png) 0 0 no-repeat;
 	}
 }
 
@@ -183,13 +202,19 @@ section {
 	}
 }
 
-.participate {
-	margin: 6% 0;
+.banner {
+	img {
+		width: 100%;
+	}
 
-	.contactBtn {
-		display: block;
-		margin: 70px auto 0;
-		text-align: center;
+	.participate {
+		padding: 6% 0;
+
+		.contactBtn {
+			display: block;
+			margin: 70px auto 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -213,6 +238,18 @@ section {
 			}
 		}
 	}
+}
+
+#schema {
+	display: none;
+}
+
+.importantPromo {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 200px;
+	display: block;
 }
 
 
