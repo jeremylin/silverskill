@@ -374,7 +374,11 @@ header {
 		.allRights {
 			font-size: 12px;
 		}
-	}  
+	}
+
+	.smallLogo {
+		display: none;
+	}
 }
 
 @media screen and (max-device-width: 480px) {
