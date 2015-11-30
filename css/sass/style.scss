@@ -235,7 +235,25 @@ header {
 
 			&:hover {
 				color: #DE9235;
+				text-decoration: underline;
 			}
+		}
+	}
+
+	.information {
+
+		a {
+			position: relative;
+		}
+
+		.notification {
+			position: absolute;
+			top: -2px;
+			right: -10px;
+			width: 6px;
+			height: 6px;
+			background-color: #EC3636;
+			@include radius(3px);
 		}
 	}
 }
@@ -248,7 +266,7 @@ header {
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 200px;
+	width: 188px;
 	display: block;
 }
 
