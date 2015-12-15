@@ -59,8 +59,10 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <a href="javascript: void(0);" alt="silverskill logo" class="smallLogo">技憶流</a>
+            <div itemscope itemtype="http://schema.org/Organization" class="container">
+                <a itemprop="url" href="http://silverskill.org/" class="smallLogo">技憶流
+                    <img itemprop="logo" src="http://silverskill.org/images/logo_header.png" alt="silverskill logo" />
+                </a>
             </div>
         </header>
         <section  id="owl-demo" class="owl-carousel owl-theme storytelling">
@@ -135,19 +137,16 @@
                         <a href="mailto:silverskill.tw@gmail.com">聯繫我們</a>&nbsp;│&nbsp;
                         <a href="participate.html">合作交流<span class="notification"></span></a>
                     </div>
-                    <div class="allRights">© 2015 來坐坐個人工作室&nbsp;│&nbsp;<a href="https://www.google.com.tw/maps/place/413%E5%8F%B0%E4%B8%AD%E5%B8%82%E9%9C%A7%E5%B3%B0%E5%8D%80%E5%92%8C%E5%B9%B3%E8%B7%AF2%E8%99%9F/@24.0439972,120.6945813,19z/data=!4m2!3m1!1s0x34693b3b5d6dddfb:0x1dcdb984acea53fd" target="_blank">413 台中市霧峰區坑口里和平路2-4號2F（光復新村）</a></div>
+                    <div itemscope itemtype="http://schema.org/GeneralContractor" id="schema">
+                        <span class="allRights">© 2015&nbsp;<span itemprop="name">來坐坐個人工作室</span></span>&nbsp;│&nbsp;<span>光復新村</span>&nbsp;│&nbsp;
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address">
+                            <span itemprop="postalCode">413</span>
+                            <span itemprop="addressRegion">台灣</span>
+                            <span itemprop="addressLocality">台中市</span>
+                            <span itemprop="streetAddress">霧峰區和平路2-4號2F</span>
+                        </div><a href="https://www.google.com.tw/maps/place/413%E5%8F%B0%E4%B8%AD%E5%B8%82%E9%9C%A7%E5%B3%B0%E5%8D%80%E5%92%8C%E5%B9%B3%E8%B7%AF2%E8%99%9F/@24.0439972,120.6945813,19z/data=!4m2!3m1!1s0x34693b3b5d6dddfb:0x1dcdb984acea53fd" itemprop="maps" target="_blank">（查看地圖）</a>
+                    </div> 
                 </div>
-            </div>
-            <div itemscope itemtype="http://schema.org/GeneralContractor" id="schema">
-                <span itemprop="name">來坐坐個人工作室</span>
-                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"> <u>Rated:</u> <span itemprop="ratingValue">4.6</span> / 5  based on <span itemprop="reviewCount">19331</span> customer reviews </div>
-                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="streetAddress">霧峰區和平路2-4號2F</span>
-                    <span itemprop="addressLocality">台中市</span>,
-                    <span itemprop="addressRegion">台灣</span>
-                    <span itemprop="postalCode">413</span>
-                </div><a href="https://www.google.com.tw/maps/place/413%E5%8F%B0%E4%B8%AD%E5%B8%82%E9%9C%A7%E5%B3%B0%E5%8D%80%E5%92%8C%E5%B9%B3%E8%B7%AF2%E8%99%9F/@24.0439972,120.6945813,19z/data=!4m2!3m1!1s0x34693b3b5d6dddfb:0x1dcdb984acea53fd" itemprop="maps">地圖</a>
-                Phone: <span itemprop="telephone">0928749859</span> 
             </div>
         </footer>
         <div class="social-likes social-likes_vertical importantPromo" data-url="http://silverskill.org/">

@@ -46,7 +46,6 @@ header {
 		left: 150px;
 		width: 200px;
 		height: 37px;
-		background: url(../images/logo_header.png) 0 0 no-repeat;
 	}
 }
 
@@ -225,7 +224,7 @@ header {
 		padding: 1% 0;
 	}
 
-	.information, .allRights {
+	.information, #schema {
 		text-align: center;
 		font-size: 14px;
 		color: #949494;
@@ -240,7 +239,13 @@ header {
 		}
 	}
 
+	.address {
+		display: inline-block;
+	}
+
 	.information {
+		font-size: 16px;
+		padding: 10px 0;
 
 		a {
 			position: relative;
@@ -256,10 +261,6 @@ header {
 			@include radius(3px);
 		}
 	}
-}
-
-#schema {
-	display: none;
 }
 
 .importantPromo {
@@ -388,10 +389,8 @@ header {
 		}
 	}
 
-	.footer {
-		.allRights {
-			font-size: 12px;
-		}
+	.footer .information {
+		padding: 24px 0;
 	}
 
 	.smallLogo {
