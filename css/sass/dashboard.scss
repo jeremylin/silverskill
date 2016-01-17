@@ -1,0 +1,276 @@
+@import "normalize";
+@import "mixin";
+@import "layout";
+
+.storytelling {
+
+	img {
+		width: 100%;
+	}
+}
+
+.intro, .part {
+	background-color: #FFFFFF;	
+
+	.centerWrap {
+		overflow: hidden;
+
+		.forWriting, .statement {
+			float: left;
+		}
+
+		.forWriting {
+			text-align: center;
+		}
+	}	
+}
+
+.intro {
+
+	.forWriting {
+		width: 25%;
+	}
+
+	.statement {
+		width: 50%;
+	}
+
+	.left {
+		padding: 10% 0 8% 10%;
+	}
+
+	.right {
+		padding: 10% 10% 10% 5%;
+	}
+}
+
+.part {
+	padding: 5% 0;
+
+	.wraps {
+		overflow: hidden;
+		width: 100%;
+
+		h1 {
+			line-height: 1.4em;
+		}
+	}
+
+	hr {
+		width: 50%;
+		border: 1px solid #e0ded5;
+		margin-top: 30px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.forWriting, .statement {
+		width: 45%;
+	}
+
+	.left {
+		padding: 5% 2% 3% 3%;
+	}
+
+	.right {
+		padding: 5% 3% 3% 2%;
+	}
+}
+
+.callToAction {
+	background-color: #6D6D6D;
+	padding: 5% 0;
+
+	.centerWrap {
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+
+		p {
+			color: #fff;
+			line-height: 1.5em;
+		}
+	}
+}
+
+.records {
+	.centerWrap {
+		overflow: hidden;
+		padding: 10% 0;
+
+		h1 {
+			margin-left: 1%;
+		}
+
+		.blogs {
+			display: block;
+			width: 23%;
+			margin: 20px 1%;
+			float: left;
+			background-color: #fff;
+			@include radius(5px);
+			color: #30302F;
+
+			img {
+				width: 100%;
+			}
+
+			.summary {
+				width: 90%;
+				margin: 8% auto;
+				text-align: justify;
+
+				p {
+					color: #848484;
+
+					.more {
+						font-family: 'Contrail One', cursive;
+					}
+				}
+			}
+
+			&:hover {
+				@include shadow(5px, 5px, 10px, 4px, rgba(183, 179, 172, 0.4));
+				color: #751F16;
+			}
+		}
+	}
+}
+
+.banner {
+	img {
+		width: 100%;
+	}
+
+	.participate {
+		padding: 6% 0;
+
+		.contactBtn {
+			display: block;
+			margin: 70px auto 0;
+			text-align: center;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1399px) {
+    /// 如果使用者之視窗寬度介於 1280px ~ 1399px，將會再載入這裡的 CSS。
+}
+
+@media screen and (max-width: 1279px) {
+    /// 如果使用者之視窗寬度介於 960px ~ 1280px，將會再載入這裡的 CSS。
+	.intro {
+		.forWriting {
+			width: 28%;
+		}
+
+		.left {
+			padding: 13% 0 8% 7%;
+		}
+
+		.right {
+			padding: 10% 7% 10% 8%;
+		}
+	}
+
+	.records {
+		.centerWrap {
+
+			.blogs {
+				width: 48%;
+			}
+		}
+	}
+
+	.part {
+		.left {
+			padding: 5% 2% 0 0;
+		}
+
+		.right {
+			padding: 5% 0 0 2%;
+		}
+
+		.forWriting {
+			padding-top: 14%;
+		}
+
+		.statement {
+			width: 51%;
+		}
+	}	
+}
+
+@media screen and (max-width: 959px) {
+    // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。
+	.intro {
+		.forWriting, .statement {
+			width: 80%;
+		}
+
+		.left {
+			padding: 13% 10% 2%;
+		}
+
+		.right {
+			padding: 5% 10% 12% 10%;
+		}
+	} 
+
+	.participate {
+		.contactBtn {
+			margin: 70px auto;
+		}
+	} 
+
+	.part {
+		.left, .right {
+			padding: 5% 1% 0 1%;
+		}
+
+		.forWriting {
+			padding-top: 5%;
+		}
+
+		.forWriting, .statement {
+			width: 98%;
+		}
+	} 
+}
+
+@media screen and (max-width: 767px) {
+    // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。
+	.records {
+		.centerWrap {
+
+			.blogs {
+				width: 98%;
+			}
+		}
+	} 
+
+	section {
+		.contactBtn {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (max-device-width: 480px) {
+    // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。
+
+    .intro .left {
+    	img {
+    		width: 55%;
+    	}
+    }
+
+	.part {
+		.wraps h1 {
+			font-size: 1.6em;
+		}
+	}
+}
