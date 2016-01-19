@@ -1,0 +1,138 @@
+@import "normalize";
+@import "mixin";
+@import "layout";
+
+header {
+	position: fixed;
+	top: 0;
+}
+
+.part {
+	background-color: #FFFFFF;
+	padding: 5% 0;
+
+	.centerWrap {
+		overflow: hidden;
+
+		.forWriting, .statement {
+			float: left;
+			width: 45%;
+		}
+
+		.forWriting {
+			text-align: center;
+		}
+	}
+
+	.wraps {
+		overflow: hidden;
+		width: 100%;
+
+		h1 {
+			line-height: 1.4em;
+		}
+	}
+
+	hr {
+		width: 50%;
+		border: 1px solid #e0ded5;
+		margin-top: 30px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.left {
+		padding: 5% 2% 3% 3%;
+	}
+
+	.right {
+		padding: 5% 3% 3% 2%;
+	}	
+}
+
+.banner {
+	img {
+		width: 100%;
+		margin-top: 70px;
+	}
+
+	.participate {
+		padding: 6% 0;
+
+		.contactBtn {
+			display: block;
+			margin: 70px auto 0;
+			text-align: center;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1399px) {
+    /// 如果使用者之視窗寬度介於 1280px ~ 1399px，將會再載入這裡的 CSS。
+}
+
+@media screen and (max-width: 1279px) {
+    /// 如果使用者之視窗寬度介於 960px ~ 1280px，將會再載入這裡的 CSS。
+
+	.part {
+		.centerWrap {
+			.forWriting {
+				padding-top: 14%;
+			}
+
+			.statement {
+				width: 51%;
+			}
+		}
+
+		.left {
+			padding: 5% 2% 0 0;
+		}
+
+		.right {
+			padding: 5% 0 0 2%;
+		}
+	}	
+}
+
+@media screen and (max-width: 959px) {
+    // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。
+
+	.participate {
+		.contactBtn {
+			margin: 70px auto;
+		}
+	} 
+
+	.part {
+		.centerWrap {
+			.forWriting {
+				padding-top: 5%;
+			}
+
+			.forWriting, .statement {
+				width: 98%;
+			}
+		}
+
+		.left, .right {
+			padding: 5% 1% 0 1%;
+		}
+	} 
+}
+
+@media screen and (max-width: 767px) {
+    // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。
+}
+
+@media screen and (max-device-width: 480px) {
+    // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。
+	.part {
+		.wraps h1 {
+			font-size: 1.6em;
+		}
+	}
+}
