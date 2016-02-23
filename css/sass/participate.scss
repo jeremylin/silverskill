@@ -33,6 +33,38 @@ header {
 		}
 	}
 
+	.share { 
+		margin: 5px 0 40px;
+		line-height: 44px;
+		height: 44px;
+
+		.social-likes {
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.icon {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			margin-right: 5px;
+			font-size: 0;
+		}
+
+		.line {
+			background: url(../images/line_icon.png) 0 0 no-repeat;
+
+			&:hover {
+				background: url(../images/line_icon_hover.png) 0 0 no-repeat;				
+			}
+		}
+	}
+
+	.shareWrap { 
+		margin-top: 100px;
+		text-align: center;
+	}
+
 	hr {
 		width: 50%;
 		border: 1px solid #e0ded5;

@@ -24,7 +24,7 @@
         <meta name="application-name" content="技憶流">
         <meta name="copyright" content="© 2015 來坐坐個人工作室 All rights reserved.">
         <meta name="robots" content="all">
-        <link rel="canonical" href="http://silverskill.org" />
+        <link rel="canonical" href="http://silverskill.org/participate.html" />
 
         <!-- GA
         ================================================== -->
@@ -38,6 +38,9 @@
             ga('send', 'pageview');
 
         </script>
+
+        <!-- Navi RWD
+        ================================================== -->        
         <script>
             jQuery(document).ready(function() {
                 jQuery('.toggle-nav').click(function(e) {
@@ -61,9 +64,9 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li><a href="">100種退休生活</a></li>
-                    <li><a href="">活動課程</a></li>
-                    <li><a href="participate.html">合作交流</a></li>
+                    <li><a href="story.html">技憶故事</a></li>
+                    <li><a href="activity.html">活動課程</a></li>
+                    <li><a class="here" href="javascript: void(0);">合作交流</a></li>
                     <li><a href="https://www.facebook.com/silverskill.tw" target="_blank">facebook</a></li>
                     <li><a href="mailto:silverskill.tw@gmail.com">聯繫我們</a></li>
                 </ul>
@@ -75,10 +78,10 @@
             </a>
             <nav class="menu">
                 <ul class="active">
-                    <li class="current-item"><a href="#">首頁</a></li>
-                    <li><a href="">100種退休生活</a></li>
-                    <li><a href="">活動課程</a></li>
-                    <li><a href="participate.html">合作交流</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="story.html">技憶故事</a></li>
+                    <li><a href="activity.html">活動課程</a></li>
+                    <li class="current-item"><a href="javascript: void(0);">合作交流</a></li>
                     <li><a href="https://www.facebook.com/silverskill.tw" target="_blank">facebook</a></li>
                     <li><a href="mailto:silverskill.tw@gmail.com">聯繫我們</a></li>
                 </ul>
@@ -87,7 +90,7 @@
             </nav>            
         </header>
         <section class="banner">
-            <img src="images/smile.jpg" alt="smile banner">
+            <img src="images/participate/smile.jpg" alt="smile banner">
             <div class="container">
                 <div class="centerWrap">
                     <div class="participate">
@@ -103,7 +106,7 @@
                 <div class="centerWrap">
                     <div class="wraps">
                         <div class="forWriting left">
-                            <img src="images/design.jpg" alt="攝影、設計、文字紀錄者">
+                            <img src="images/participate/design.jpg" alt="攝影、設計、文字紀錄者">
                         </div>
                         <div class="statement right">
                             <h1>設計、攝影、文字紀錄</h1>
@@ -119,18 +122,26 @@
                             <p>志工們需要做什麼呢？就和我們一起到長青學苑、社區大學等地方與長輩們互動、教學等。參與的過程中，志工們有機會與影像紀錄團隊一起出外景、探訪長輩，想學攝影、拍影片，就盡量開口吧！</p>
                         </div>
                         <div class="forWriting right">
-                            <img src="images/volunteers.jpg" alt="志工">
+                            <img src="images/participate/volunteers.jpg" alt="志工">
                         </div>
                     </div>
                     <hr>
                     <div class="wraps">
                         <div class="forWriting left">
-                            <img src="images/trailer.jpg" alt="紀錄片">
+                            <img src="images/participate/trailer.jpg" alt="紀錄片">
                         </div>
                         <div class="statement right">
                             <h1>紀錄片偏執者</h1>
                             <p>不論你是一個人或是一個團隊，正在找尋那即將消失中的記憶或人生哲學經驗的題材，歡迎與我們聯繫！技憶流目前以靜態攝影與文字的紀錄為主，未來希望你的加入，帶入更多元的影像呈現方式，讓在地故事、工藝傳承等題材可以更動人、更有感染力。</p>
                             <p>我們一直希望可以將既有的故事題材昇華成動態的影像創作，不論是以寫實的紀錄片方式呈現或是以帶有情感鋪成的微電影來表達你所看到、聽到、感受到的真實故事，天啊！我真希望你到來的那天！</p>
+                        </div>
+                    </div>
+                    <div class="shareWrap">
+                        <div class="share">分享：
+                            <div class="social-likes" data-counters="no" data-url="http://silverskill.org/participate.html">
+                                <div class="facebook" title="分享">分享出去</div>
+                            </div>
+                            <a href="http://line.naver.jp/R/msg/text/?http://silverskill.org/participate.html" target="_blank" class="icon line">Line</a>
                         </div>
                     </div>
                 </div>
@@ -151,22 +162,6 @@
                 </div>
             </div>
         </footer>
-        <div class="social-likes social-likes_vertical importantPromo" data-url="http://silverskill.org/">
-            <div class="facebook" title="Share link on Facebook">Facebook</div>
-        </div>
         <script src="js/social-likes.min.js"></script>
-        <script src="js/stickUp.js"></script>
-        <script type="text/javascript">
-        //initializing jQuery
-            jQuery(function($) {
-                $(document).ready( function() {
-                //enabling stickUp on the '.navbar-wrapper' class
-                    $('.navbar-wrapper').stickUp({
-                      //enabling marginTop with the 'auto' setting 
-                      marginTop: 'auto'
-                    });
-                });
-            });
-        </script>
     </body>
 </html>

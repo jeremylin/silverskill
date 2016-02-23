@@ -12,6 +12,13 @@ header, section {
 	width: 100%;
 }
 
+.storytelling {
+
+	img {
+		width: 100%;
+	}
+}
+
 section {
 	.contactBtn {
 		display: inline-block;
@@ -69,7 +76,7 @@ header {
 	li a {
 		color: #751F16;
 
-		&:hover {
+		&:hover, &.here {
 			color: #FF7600;
 		}
 	}
@@ -135,16 +142,6 @@ header {
 	}
 }
 
-.importantPromo {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 188px;
-	display: block;
-	z-index: 1000;
-}
-
-
 @media screen and (max-width: 1399px) {
     /// 如果使用者之視窗寬度介於 1280px ~ 1399px，將會再載入這裡的 CSS。
     .container {
@@ -205,14 +202,14 @@ header {
 		    }
 
 		    ul {
-		        width: calc(100% - 20px);
+		        width: 100%;
 		        position: absolute;
 		        top: 60px;
 		        left: 0px;
-		        padding: 10px 18px;
+		        padding: 10px 0px;
 		        @include radius(3px);
 		        background: #FFFFFF;
-		        padding: 0;
+		        @include shadow(2px, 4px, 10px, 2px, rgba(154, 154, 154, 0.4));
 
 		        &:after {
 					width: 0px;
