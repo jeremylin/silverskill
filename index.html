@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/owl.theme.css">
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/owl.carousel.js"></script>
+        <script src="js/scrollfix.js"></script>
         <script>
             $(document).ready(function() {
                 $("#owl-demo").owlCarousel({
@@ -23,17 +24,20 @@
                     singleItem: true  
                 });
             });
-
-       // Navi RWD
-            jQuery(document).ready(function() {
-                jQuery('.toggle-nav').click(function(e) {
-                    jQuery(this).toggleClass('active');
-                    jQuery('.menu ul').toggleClass('active');
-             
-                    e.preventDefault();
-                });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $('#bar').scrollFix();
+                
+                $( '.menu-btn' ).click(function(){
+                    $('.responsive-menu').toggleClass('expand')
+                })
+                $( '.menu>li' ).click(function(){
+                    $('.responsive-menu').removeClass('expand')
+                })
             });
         </script>
+
         <!-- Mobile Specific Metas
         ================================================== -->
         <meta name="format-detection" content="telephone=no">
@@ -61,50 +65,45 @@
             ga('send', 'pageview');
 
         </script>
-
         <link rel="icon" type="image/x-icon" href="images/favico.png">
         <link rel="shortcut icon" type="image/x-icon" href="images/favico.png">
         <link href='https://fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header class="mobile">
-            <a itemprop="url" href="index.html" class="smallLogo">技憶流
-                <img itemprop="logo" class="logoImg" src="http://silverskill.org/images/logo_header.png" alt="silverskill logo" />
-            </a>
-            <nav class="menu">
-                <ul class="active">
-                    <li class="current-item"><a href="javascript: void(0);">首頁</a></li>
-                    <li><a href="story.html">技憶故事</a></li>
-                    <li><a href="activity.html">活動課程</a></li>
-                    <li><a href="participate.html">合作交流</a></li>
-                    <li><a href="https://www.facebook.com/silverskill.tw" target="_blank">facebook</a></li>
-                    <li><a href="mailto:silverskill.tw@gmail.com">聯繫我們</a></li>
-                </ul>
-             
-                <a class="toggle-nav" href="#">&#9776;</a>
-            </nav>            
-        </header>
         <section id="owl-demo" class="owl-carousel owl-theme storytelling">
             <div class="item"><img src="images/dashboard/story.jpg" alt="故事"></div>
             <div class="item"><img src="images/dashboard/experience.jpg" alt="經驗"></div>
             <div class="item"><img src="images/dashboard/art.jpg" alt="工藝"></div>
             <div class="item"><img src="images/dashboard/dream.jpg" alt="夢想"></div>
         </section>
-        <header class="navbar-wrapper desktop">
-            <div class="container">
-                <div itemscope itemtype="http://schema.org/Organization" class="logoWrap">
+        <header id="bar">
+            <nav class="headerStickyWrap">
+                <div class="logoWrap" itemscope itemtype="http://schema.org/Organization">
                     <a itemprop="url" href="http://silverskill.org/" class="smallLogo">技憶流
                         <img itemprop="logo" src="http://silverskill.org/images/logo_header.png" alt="silverskill logo" />
                     </a>
                 </div>
-                <ul class="nav">
+                <ul class="nav desktop-nav">
                     <li><a href="story.html">技憶故事</a></li>
                     <li><a href="activity.html">活動課程</a></li>
                     <li><a href="participate.html">合作交流</a></li>
                     <li><a href="https://www.facebook.com/silverskill.tw" target="_blank">facebook</a></li>
                     <li><a href="mailto:silverskill.tw@gmail.com">聯繫我們</a></li>
-                </ul>
-            </div>
+                </ul>                
+                <div class="mobile-nav">
+                    <span class="menu-btn"></span>
+                    <div class="responsive-menu">
+                        <ul id="menu-mobile-menu" class="menu">
+                            <li><a class="current-item" href="javascript: void(0);">首頁</a></li>
+                            <li><a href="story.html">技憶故事</a></li>
+                            <li><a href="activity.html">活動課程</a></li>
+                            <li><a href="participate.html">合作交流</a></li>
+                            <li><a href="https://www.facebook.com/silverskill.tw" target="_blank">facebook</a></li>
+                            <li><a href="mailto:silverskill.tw@gmail.com">聯繫我們</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <section class="intro">
             <div class="container">
@@ -178,18 +177,5 @@
                 </div>
             </div>
         </footer>
-        <script src="js/stickUp.js"></script>
-        <script type="text/javascript">
-        //initializing jQuery
-            jQuery(function($) {
-                $(document).ready( function() {
-                //enabling stickUp on the '.navbar-wrapper' class
-                    $('.navbar-wrapper').stickUp({
-                      //enabling marginTop with the 'auto' setting 
-                      marginTop: 'auto'
-                    });
-                });
-            });
-        </script>
     </body>
 </html>
