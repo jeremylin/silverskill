@@ -34,9 +34,10 @@
 		    	text-align: center;
 		    	padding: 12px;
 		    	display: inline-block;
+		    	background-color: #f90;
 
 		    	&:hover {
-		    		background-color: #f90;
+		    		background-color: transparent;
 		    	}
 		    }
 		}
